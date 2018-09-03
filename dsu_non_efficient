@@ -1,0 +1,19 @@
+class dsu{
+    public:
+    vector<int> ds;
+    int n;
+    dsu(int _n){
+        n = _n;
+        ds.resize(n);
+        iota(ds.begin(), ds.end(), 0);
+    }
+    bool find(int a, int b){
+        return ds[a] == ds[b];    
+    }
+    void un(int a, int b){
+        int counter = ds[a];
+    for(int i = 0 ; i < n ; i ++){
+        if(ds[i] == counter) ds[i] = ds[b];
+        }
+    }
+};
