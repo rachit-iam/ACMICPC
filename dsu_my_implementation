@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+class dsu{
+    public:
+    vector<int> ds;
+    int n;
+    dsu(int _n){
+        n = _n;
+        ds.resize(n);
+        iota(ds.begin(), ds.end(), 0);
+    }
+    int get(int a){
+        if(ds[a] == a) return a;
+        return get(ds[a]); 
+    }
+    void unite(int a, int b){
+        a = get(a);
+        b = get(b);
+        ds[a] = ds[b];
+    }
+};
+
+int main(){
+    dsu se(5);
+    se.unite(0,1);
+    se.unite(1,4);
+    se.unite(2,3);
+    se.unite(0,3);
+    for(int i = 0 ; i < 5 ; i++){
+        cout << se.ds[i] << endl;
+    }
+}
