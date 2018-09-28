@@ -1,0 +1,12 @@
+//doing clrs book(number theory algorithms)
+
+#1 if a and b then the smallest positive integer in the set of ax + by is gcd of a and b(clrs page 930, see the proof)
+#2 if p1 p2 p3 .... are primes then p1*p2*p3*p4..... + 1 is also a prime
+#3 (a+b)^p mod p = a^p + b^p from the result that p divides pCk
+#4 a^phi(N) = 1 mod N // = equals mod triple equal
+#5 a^p-1 = 1mod p ,p = prime, as phi(p) = p-1;
+#6 a^x = a^(x mod phi(n))mod n
+#7 ((n-1)!) mod n =(n-1) wilson for any n
+#8 see hackerearth notes on number theory part 2   ||   https://www.hackerearth.com/practice/notes/number-theory-ii/
+
+
